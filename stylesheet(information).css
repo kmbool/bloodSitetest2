@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, arial;
+    font-size: 20px;
+    background-color: bdc3c7;
+  }
+
+  #main{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "header-about header-img"
+      "content content"
+      "record about"
+      "footer footer";
+    justify-items: center;
+    text-align: center;
+    margin: 10px auto;
+    grid-gap: 30px 0;
+    line-height: 1.2em;
+  }
+  #image{
+    grid-area: header-img;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }  
+  
+  #header1{
+    grid-area: header-about;
+    background-color: #bdc3c7;
+    width: 100%;
+  }
+  #header1 > .pharagraph{
+    padding-top: 15px;
+  }
+  #header1 > h1{
+    font-size: 45px;
+  }
+  #small-content{
+    grid-area: content;
+    background-color: #455a6f;
+    width: 100%;
+    height: auto;
+    color: white;
+  }
+  #wim-record{
+    grid-area: record;
+    background-color: #acb2b6;
+    width: 100%-10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+  #wim-record > h2{
+    text-align: center;
+  }
+  #tribute-info{
+    grid-area: about;
+    background-color: #bdc3c7;
+    width: 100%-10px;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #tribute-info h2{
+    text-align: center;
+  }
+  #footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: #455a6f;
+    color: white;
+    padding: 20px 0;
+  }
+  #footer > a{
+    color: lightgreen;
+    text-decoration: none;
+  }
+  #footer > a:hover{
+    color: #b5cacc;
+  }
+  #img-caption{
+    display: none;
+  }
+  
+  @media (max-width:860px){
+    #main{
+      grid-template-columns: 1fr;
+      grid-gap: 10px 0;
+      width: 95%;
+      height: auto;
+      grid-template-areas:
+      "header-about"
+      "header-img"
+      "content"
+      "record"
+      "about"
+      "footer";
+    }
+    #small-content h2, #tribute-info h2{
+      line-height: 1.2em;
+    }
+    a > span{
+      display: block;
+    }
+    #image{
+      width: 100%;
+      height: auto;
+    }
+  }
+  

@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(pics/2381638.png) ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+nav
+{
+  width: 100% ;
+  height: 100px ;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(pics/2381638.png) ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 45px;
+
+}
+ul li{
+  display: inline-block;
+
+}
+ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  transition: 1s;
+}
+ul li a:hover{
+  background-color: blanchedalmond;
+  color: black;
+
+}
+ul li.active a{
+  background-color: blanchedalmond;
+  color: black;
+}
+.logo img{
+  float: left;
+  width: 90px;
+  height: auto;
+
+}
+.main{
+  max-width: 1200px;
+  margin: auto;
+} 
+.title{
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title h1{
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo2 img{
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  float: left;
+  width: 120px;
+  height: auto;
+
+
+}
+/*this style for the contact layout */
+
+#contact {
+  
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(187, 33, 22);
+    overflow: hidden;
+    padding-bottom: 200px;
+
+  }
+  body{
+    background-color: #a51717;
+}
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 55px;
+    margin-bottom: 150px;
+    font: 300 60px 'Oswald', sans-serif;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  .contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+  }
+  
+  /* Begin Left Contact Page */
+  .form-horizontal {
+    float: left;
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .col-sm-12 , input {
+     
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1px 1px;
+    border: 10px solid transparent;
+    transition: 1s;
+  }
+  
+  .form-control, textarea {
+    max-width: 400px;
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1px 1px;
+    border: 10px solid transparent;
+    transition: 1s;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  .button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 300 14px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+    float: right;
+    margin-top: 5px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .place {
+    margin-left: 80px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 40px;
+  }
+  
+  .contact-text a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #111;
+    text-decoration: none;
+    
+  }
+  
+  
+  
+  
+  .copyright {
+    font: 200 15px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.8); ;
+  }
+  

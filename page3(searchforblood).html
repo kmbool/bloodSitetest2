@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> Kuwait Blood </title>
+    <link href="stylesheet(page3).css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="https://www.moh.gov.kw/ar/Pages/default.aspx"><img src="logo.png"> </a>
+            </div>
+            <div class="logo2">
+                <a href="https://www.k-tech.edu.kw/"><img src="k-tech-logo.svg"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="page2(donate blood).html">Donate Blood</a></li>
+                    <li class="active"><a href="page3(searchforblood).html">Search for Blood</a></li>
+                    <li><a href="page4(about).html">About</a></li>
+                    <li><a href="page5(contact).html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="searchBox">
+            <input class="searchInput" type="text" id="myInput" onkeyup="myFunction()"
+                placeholder="Search for blood type..">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+
+        <table  class="table-fill" id="myTable">
+            <thead>
+                <tr>
+                    <th class="text-left">Name</th>
+                    <th class="text-left">Age</th>
+                    <th class="text-left">Blood Type</th>
+                    <th class="text-left">Phone</th>
+                </tr>
+            </thead>
+            <tbody class="table-hover" id="cards">
+
+            </tbody>
+            <div class="container">
+                <div class="ticker">
+                 
+                  <div class="news">
+                    <marquee>
+                      <p class="pra">You can call us at: 224242819 if you need any help.</p>
+                    </marquee>
+                  </div>
+                </div>
+              </div>
+            
+        </table>
+
+
+    </header>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

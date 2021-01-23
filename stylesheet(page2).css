@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.myDIV{
+    border-radius: 1px;
+    border: 1px solid rgb(212, 212, 212);
+    box-sizing: border-box;
+}
+.z8
+{
+    position: relative;
+    margin-left: 1cm;
+
+    width: 6cm;
+    height: 0.8cm;
+    
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 1em;
+    font-family:inherit;
+}
+.location{
+    width: 7.9cm;
+    height: 1cm;
+}
+body{
+    background-color: #a51717;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(pics/2381638.png) ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+nav
+{
+    width: 100% ;
+    height: 100px ;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(pics/2381638.png) ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float:right;
+    list-style-type: none;
+    margin-top: 45px;
+
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    transition: 1s;
+}
+ul li a:hover{
+    background-color: blanchedalmond;
+    color: black;
+
+}
+ul li.active a{
+    background-color: blanchedalmond;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 90px;
+    height: auto;
+
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+} 
+.title{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo2 img{
+    position: absolute;
+    top: 5%;
+    left: 14%;
+    float: left;
+    width: 120px;
+    height: auto;
+
+
+}
+
+
+form {
+    padding: 40px ;
+    max-width: 300px;
+    margin: 30px auto;
+    background:white;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(10px);
+    box-shadow:0px 2px 10px rgba(0,0,0,0.3);
+    border-radius:5px;
+    transition:transform 0.2s ease-in-out;
+  }
+  
+  
+  input {
+    width: 100%;
+    margin: 7px 0px;
+    display: inline-block;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 1em;
+    font-family:inherit;
+    background:white;
+  }
+  input.button {
+    background: rgb(237, 40, 70);
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow:0px 2px 5px rgb(0,0,0,0.5);
+  }
+select
+{
+    width: 100%;
+    margin: 7px 0px;
+    display: inline-block;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 1em;
+    font-family:inherit;
+    background:white;
+
+}
+  
+  .pra{
+      padding-top: 0.4cm;
+      color: rgb(245, 245, 245);
+      font-size: 0.7cm;
+    text-align:justify;
+  margin-top:0;
+  
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+ 
+  
+  .ticker {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      height: 60px;
+      margin: 0 auto;
+  }
+  .news {
+      width: 76%;
+      background: #cc4444;
+      padding: 0 2%;
+  }
+  .title1 {
+      width: 20%;
+      text-align: center;
+      background: #a51717;
+      position: relative;
+  }
+  .title1:after {
+      position: absolute;
+      content: "";
+      right: -16%;
+      border-left: 20px solid #a51717;
+      border-top: 33px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 33px solid transparent;
+      top: 0;
+  }
+  .title1 h5 {
+      font-size: 18px;
+      margin: 8% 0;
+  }
+  .news marquee {
+      font-size: 18px;
+  }
+
+
+  .location {
+    display: block;
+    font-size: 0.8em;
+  }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> Kuwait Blood </title>
+    <link href="stylesheet(page2).css" rel="stylesheet" type="text/css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="https://www.moh.gov.kw/ar/Pages/default.aspx"><img src="logo.png"> </a>
+            </div>
+            <div class="logo2">
+                <a href="https://www.k-tech.edu.kw/"><img src="k-tech-logo.svg"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="project.html">Home</a></li>
+                    <li class="active"><a href="page2(donate blood).html">Donate Blood</a></li>
+                    <li><a href="page3(searchforblood).html">Search for Blood</a></li>
+                    <li><a href="page4(about).html">About</a></li>
+                    <li><a href="page5(contact).html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+      
+
+        
+        <form id="signIn-form">
+            <p>Personal information</p>
+
+            <input type="email" name="inputEmail" id="inputEmail" placeholder="Email address" required>
+            <input type="text" name="inputFullName" id="inputFullName" placeholder="Full Name" required autofocus>
+            <input type="number" name="inputAge" id="inputAge" placeholder="Age" required>
+
+            <select name="blood_type" id="blood_type" class="selects" required>
+                <option value=""> Blood type </option>
+                <option value="O+">+O</option>
+                <option value="O-">-O</option>
+                <option value="B+">+B</option>
+                <option value="B-">-B</option>
+                <option value="A+">+A</option>
+                <option value="A-">-A</option>
+                <option value="AB+">+AB</option>
+                <option value="AB-">-AB</option>
+            </select>
+            <input type="text" name="inputPhone" id="inputPhone" placeholder="Phone Number" required>
+
+            <button class="z8" onclick="myFunction()">Home service</button>
+
+ <div class="myDIV" id="myDIV">
+           
+                <input id="date" type="date" value="2021-01-01">
+                <small>(Work hours are 9am to 6pm)</small>
+                <input id="time" type="time" id="appt" name="appt"
+                min="09:00" max="18:00" required>
+         
+         
+    
+    
+    
+         <button class="location" onclick="getLocation()">Your coordinates are:</button>
+     
+    <p id="Test"></p>
+    
+    <script>
+        var x = document.getElementById("Test");
+
+        function getLocation() {
+            //Check if Geolocation is supported 
+            if (navigator.geolocation) {
+                //If supported, run the getCurrentPosition() method
+                //If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                //If not, display a message to the user
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        //The showPosition() function outputs the Latitude and Longitude
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</div>
+            
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+            
+
+            
+
+            <p class="error text-center"></p>
+            <input type="submit" class="button" id="submit" value="submit"></input>
+        </form>
+        <div class="container">
+            <div class="ticker">
+              <div class="title1"><h5>Note that :</h5></div>
+              <div class="news">
+                <marquee>
+                  <p class="pra">You can call us at: 224242819. To inquire about the home blood donation service.</p>
+                </marquee>
+              </div>
+            </div>
+          </div>
+
+
+    </header>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>

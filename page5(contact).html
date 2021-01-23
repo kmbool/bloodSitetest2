@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title> Kuwait Blood </title>
+  <link href="stylesheet(page5).css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <div class="logo">
+        <a href="https://www.moh.gov.kw/ar/Pages/default.aspx"><img src="logo.png"> </a>
+      </div>
+      <div class="logo2">
+        <a href="https://www.k-tech.edu.kw/"><img src="k-tech-logo.svg"></a>
+      </div>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="page2(donate blood).html">Donate Blood</a></li>
+        <li><a href="page3(searchforblood).html">Search for Blood</a></li>
+        <li><a href="page4(about).html">About</a></li>
+        <li class="active"><a href="page5(contact).html">Contact</a></li>
+
+      </ul>
+    </div>
+    <div class="title">
+
+    </div>
+
+
+
+    <!---------------- 
+          
+                CONTACT PAGE
+              
+                ----------------->
+    <section id="contact">
+
+      <h1 class="section-header">CONTACT</h1>
+
+
+      <div class="contact-wrapper">
+
+        <!---------------- 
+          
+                CONTACT PAGE LEFT 
+              
+                ----------------->
+
+        <form class="form-horizontal" role="form" method="post" id="contactUS">
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="nameInfo" placeholder="NAME" name="name" value="" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="emailInfo" placeholder="EMAIL" name="email" value=""
+                required>
+            </div>
+          </div>
+
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" id="messagesInfo" name="message"
+            required></textarea>
+
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+
+          </button>
+
+        </form>
+
+        <!---------------- 
+          
+                CONTACT PAGE RIGHT 
+              
+                ----------------->
+
+        <div class="direct-contact-container">
+
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Blood donate Web
+                  site</span></i></li>
+
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                    href="tel:+965-66551787" title="Give me a call">(965) 66551787</a></span></i></li>
+
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                    href="mailto:Abdulrahman-Omar@hotmail.com"
+                    title="Send me an email">Abdulrahman-Omar@hotmail.com</a></span></i></li>
+
+          </ul>
+
+
+
+          <div class="copyright">&copy; Abdullrahman - Omar</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+  </header>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
