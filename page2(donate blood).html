@@ -34,9 +34,9 @@
             </nav>
         </div>
 
-      
 
-        
+
+
         <form id="signIn-form">
             <p>Personal information</p>
 
@@ -57,74 +57,74 @@
             </select>
             <input type="text" name="inputPhone" id="inputPhone" placeholder="Phone Number" required>
 
-            <button class="z8" onclick="myFunction()">Home service</button>
+            <button type="button" class="z8" onclick="myFunction()">Home service</button>
 
- <div class="myDIV" id="myDIV">
-           
+            <div class="myDIV" id="myDIV">
+
                 <input id="date" type="date" value="2021-01-01">
                 <small>(Work hours are 9am to 6pm)</small>
-                <input id="time" type="time" id="appt" name="appt"
-                min="09:00" max="18:00" required>
-         
-         
-    
-    
-    
-         <button class="location" onclick="getLocation()">Your coordinates are:</button>
-     
-    <p id="Test"></p>
-    
-    <script>
-        var x = document.getElementById("Test");
+                <input id="time" type="time" id="appt" name="appt" min="09:00" max="18:00">
 
-        function getLocation() {
-            //Check if Geolocation is supported 
-            if (navigator.geolocation) {
-                //If supported, run the getCurrentPosition() method
-                //If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                //If not, display a message to the user
-                x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-        }
+                <button type="button" class="location" onclick="getLocation()">Your coordinates are:</button>
 
-        //The showPosition() function outputs the Latitude and Longitude
-        function showPosition(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude;
-        }
-    </script>
-</div>
-            
-            
+                <p id="Test"></p>
+            </div>
+
+
             <script>
-            function myFunction() {
-              var x = document.getElementById("myDIV");
-              if (x.style.display === "none") {
-                x.style.display = "block";
-              } else {
-                x.style.display = "none";
-              }
-            }
+                document.getElementById("myDIV").style.display = "none";
             </script>
-            
 
-            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myDIV");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+
+
+            <!-- <script>
+                var x = document.getElementById("Test");
+
+                function getLocation() {
+                    //Check if Geolocation is supported 
+                    if (navigator.geolocation) {
+                        //If supported, run the getCurrentPosition() method
+                        //If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        //If not, display a message to the user
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+
+                //The showPosition() function outputs the Latitude and Longitude
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+            </script> -->
 
             <p class="error text-center"></p>
             <input type="submit" class="button" id="submit" value="submit"></input>
         </form>
         <div class="container">
             <div class="ticker">
-              <div class="title1"><h5>Note that :</h5></div>
-              <div class="news">
-                <marquee>
-                  <p class="pra">You can call us at: 224242819. To inquire about the home blood donation service.</p>
-                </marquee>
-              </div>
+                <div class="title1">
+                    <h5>Note that :</h5>
+                </div>
+                <div class="news">
+                    <marquee>
+                        <p class="pra">You can call us at: 224242819. To inquire about the home blood donation service.
+                        </p>
+                    </marquee>
+                </div>
             </div>
-          </div>
+        </div>
 
 
     </header>
@@ -137,7 +137,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/index.js"></script>
-    
+
 </body>
 
 </html>

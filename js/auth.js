@@ -23,6 +23,10 @@ const functions = firebase.functions();
 
 
 //signUp
+
+let latitude = 0;
+let longitude = 0;
+
 const signupForm = document.querySelector('#signIn-form');
 if (signupForm) {
   signupForm.addEventListener('submit', (e) => {
@@ -39,6 +43,8 @@ if (signupForm) {
         blood_type: signupForm['blood_type'].value,
         Date: signupForm['date'].value,
         time: signupForm['time'].value,
+        latitude: latitude,
+        longitude: longitude,
       });
     }).then(() => {
       signupForm.querySelector('.error').innerHTML = '';
@@ -91,4 +97,27 @@ if (contactUS) {
     })
 
   });
+}
+
+var x = document.getElementById("Test");
+
+function getLocation() {
+  //Check if Geolocation is supported 
+  if (navigator.geolocation) {
+    //If supported, run the getCurrentPosition() method
+    //If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    //If not, display a message to the user
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+//The showPosition() function outputs the Latitude and Longitude
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+
+  latitude = position.coords.latitude;
+  longitude = position.coords.longitude;
 }
